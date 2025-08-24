@@ -1,0 +1,42 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Honeypot Dashboard</title>
+        <style>
+            body {font-family: Arial; margin:10px;}
+            .container {display: flex; flex-wrap: wrap; gap: 10px;}
+            .box {flex: 1 1 45%; padding: 10px; border: 1px solid #ccc; border-radius:5px;}
+            h2 {margin-top:0;}
+            table {width:100%; border-collapse: collapse;}
+            th, td {padding: 5px; text-align:center; font-size:14px;}
+            th {background:#4CAF50; color:white;}
+            .BENIGN td {background:#d4edda;}
+            .MALICIOUS td {background:#f8d7da;}
+        </style>
+    </head>
+    <body>
+        <h1>Honeypot Traffic Dashboard</h1>
+        <div class="container">
+            <div class="box">
+                <h2>Normal / BENIGN Packets</h2>
+                <table>
+                    <tr>
+                        <th>Timestamp</th><th>Src IP</th><th>Dst IP</th><th>Proto</th><th>SrcPort</th><th>DstPort</th><th>FlowDur</th>
+                    </tr>
+    <tr class='BENIGN'><td>2025-08-24 11:52:17.946939</td><td>192.168.0.102</td><td>224.0.0.22</td><td>OTHER</td><td>0</td><td>0</td><td>0.003803</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:24.603396</td><td>106.51.156.186</td><td>192.168.0.102</td><td>UDP</td><td>53</td><td>58703</td><td>0.001978</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:24.604132</td><td>192.168.0.102</td><td>140.82.113.22</td><td>TCP</td><td>62897</td><td>443</td><td>0.003244</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:24.857896</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.00306</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:24.858069</td><td>192.168.0.102</td><td>140.82.113.22</td><td>TCP</td><td>62897</td><td>443</td><td>0.005878</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:24.858596</td><td>192.168.0.102</td><td>140.82.113.22</td><td>TCP</td><td>62897</td><td>443</td><td>0.00935</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.109793</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.003243</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.109793</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.005237</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.109793</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.007236</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.109793</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.009236</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.109793</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.010235</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.109959</td><td>192.168.0.102</td><td>140.82.113.22</td><td>TCP</td><td>62897</td><td>443</td><td>0.012068</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.113848</td><td>192.168.0.102</td><td>140.82.113.22</td><td>TCP</td><td>62897</td><td>443</td><td>0.011181</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.113848</td><td>192.168.0.102</td><td>140.82.113.22</td><td>TCP</td><td>62897</td><td>443</td><td>0.012181</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.361228</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.003249</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.361329</td><td>192.168.0.102</td><td>140.82.113.22</td><td>TCP</td><td>62897</td><td>443</td><td>0.270305</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.401662</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.230933</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.659500</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.001996</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.659500</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.004327</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.659624</td><td>192.168.0.102</td><td>140.82.113.22</td><td>TCP</td><td>62897</td><td>443</td><td>0.0062</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.660052</td><td>192.168.0.102</td><td>140.82.113.22</td><td>TCP</td><td>62897</td><td>443</td><td>0.007774</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.660285</td><td>192.168.0.102</td><td>140.82.113.22</td><td>TCP</td><td>62897</td><td>443</td><td>0.00954</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:25.897884</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.001924</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:28.864068</td><td>192.168.0.102</td><td>13.67.9.5</td><td>TCP</td><td>56960</td><td>443</td><td>0.001994</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:28.931183</td><td>13.67.9.5</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>56960</td><td>0.002072</td></tr><tr class='BENIGN'><td>2025-08-24 11:52:28.985321</td><td>192.168.0.102</td><td>13.67.9.5</td><td>TCP</td><td>56960</td><td>443</td><td>0.001926</td></tr>
+                </table>
+            </div>
+            <div class="box">
+                <h2>Malicious Packets</h2>
+                <table>
+                    <tr>
+                        <th>Timestamp</th><th>Src IP</th><th>Dst IP</th><th>Proto</th><th>SrcPort</th><th>DstPort</th><th>FlowDur</th>
+                    </tr>
+    <tr class='MALICIOUS'><td>2025-08-24 11:52:24.600225</td><td>192.168.0.102</td><td>106.51.156.186</td><td>UDP</td><td>58703</td><td>53</td><td>0.001197</td></tr><tr class='MALICIOUS'><td>2025-08-24 11:52:25.361228</td><td>140.82.113.22</td><td>192.168.0.102</td><td>TCP</td><td>443</td><td>62897</td><td>0.006249</td></tr>
+                </table>
+            </div>
+        </div>
+    </body>
+    </html>
+    
